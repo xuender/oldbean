@@ -1,0 +1,38 @@
+menu:
+  主页: /
+  归档: /archives
+  首页: /home
+
+widgets:
+- search
+- category
+- tag
+- tb_chong
+
+excerpt_link: Read More
+
+#twitter:
+#  username:
+#  show_replies: false
+#  tweet_count: 5
+
+addthis:
+  enable: true
+  pubid: false
+  facebook: true
+  twitter: false
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics: UA-34390763-1
+rss:
+
+comment_provider: disqus
+# Facebook comment
+#facebook:
+#  appid: 123456789012345
+#  comment_count: 5
+#  comment_width: 840
+#  comment_colorscheme: light

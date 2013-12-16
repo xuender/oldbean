@@ -1,0 +1,11 @@
+<article class="post">
+  <div class="post-content">
+    <a data-type="6" data-tmpl="573x66" data-tmplid="140" data-style="2" data-border="0" biz-s_logo="1" biz-s_hot="1" href="#">搜索</a>
+  </div>
+</article>
+
+<% page.posts.each(function(item){ %>
+  <%- partial('_partial/article', {item: item, index: true}) %>
+<% }); %>
+
+<%- partial('_partial/pagination') %>

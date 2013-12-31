@@ -12,7 +12,19 @@ module.exports = (grunt)->
       generate:
         command: 'hexo generate'
     'ftp-deploy':
-      dev:
+      deploy:
+        auth:
+          host: '223.7.78.154'
+          port: 21
+          authKey: 'oldbean'
+        src: 'public'
+        dest: 'htdocs'
+        exclusions: [
+          'public/css'
+          'public/fancybox'
+          'public/js'
+        ]
+      all:
         auth:
           host: '223.7.78.154'
           port: 21
@@ -23,5 +35,5 @@ module.exports = (grunt)->
   grunt.registerTask 'default', '默认(打包)', [
     'clean'
     'shell:generate'
-    'ftp-deploy'
+    'ftp-deploy:deploy'
   ]
